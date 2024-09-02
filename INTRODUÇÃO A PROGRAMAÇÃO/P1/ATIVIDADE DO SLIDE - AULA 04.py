@@ -1,7 +1,18 @@
-print('Olá, seja bem-vindo a Casa de Festas!')
+print('Olá, seja bem-vindo a Casa de Festas. Realize seu cadastro abaixo!')
 
-idade = int(input('Digite sua idade: ')
-  if idade <= 17
-      print('Volte para casa!')
-  elif idade >= 18
-      print('Entre e aproveite!')
+name = input('Digite seu nome: ')
+adress = input('Digite seu endereço: Av. ')
+password = input('Digite sua senha: ')
+idade = int(input('Digite sua idade: '))
+
+if idade <= 17:
+    print('Volte para casa!')
+elif idade >= 18:
+    print('Entre e aproveite!')
+
+print('Confira as informações!')
+
+print(f'{name}')
+print(f'{adress}')
+print(f'{password}')
+print(f'{idade}')
