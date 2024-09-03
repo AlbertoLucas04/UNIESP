@@ -7,10 +7,8 @@ idade = int(input('Digite sua idade: '))
 
 if idade <= 17:
     print('Volte para casa!')
-elif idade >= 18:
-    print('Entre e aproveite!')
-
-print('Confira as informações!')
+else:
+    print('Confira as informações!')
 
 print(f'{name}')
 print(f'{adress}')
