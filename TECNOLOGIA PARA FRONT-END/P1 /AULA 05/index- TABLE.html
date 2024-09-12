@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{}
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Aula de Formulários</title>
+</head>
+
+<body>
+    <h1>Tabela:</h1>
+    <table>
+        <tr>
+            <th>Coluna 01</th>
+            <th>Coluna 02</th>
+            <th>Coluna 03</th>
+        </tr>
+        <tr>
+            <td>Conteúdo 01</td>
+            <td>Conteúdo 02</td>
+            <td>Conteúdo Extra 01</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 03</td>
+            <td>Conteúdo 04</td>
+            <td>Conteúdo Extra 02</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 05</td>
+            <td>Conteúdo 06</td>
+            <td>Conteúdo Extra 03</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 07</td>
+            <td>Conteúdo 08</td>
+            <td>Conteúdo Extra 04</td>
+        </tr>
+    </table>
+
+    <h1>Formulário:</h1>
+    <form autocomplete="on" action="" method="get" required>
+        
+        <h4><label for="nomeCompleto">Nome: </label></h4>
+        <input type="text" name="nomeCompleto" placeholder="Digite seu nome" required>
+        
+        <h4><label for="Matrícula">Matrícula:</label> </h4>
+        <input type="text" number="Matrícula" placeholder="N° da Matrícula" maxlength="13" required>
+        
+        <h4><label for="DataDeNascimento">Data de Nascimento: </label> </h4>
+        <input type="date" number="DataDeNascimento" placeholder="Data de Nascimento" required>
+        
+        <h4><label for="Email">Email: </label>:</h4>
+        <input type="email" placeholder="Digite seu email" required>
+        
+        <h4><label for="Link do seu repositório">Link do seu repositório:</label></h4>
+        <input type="url" placeholder="Url">
+    <br>
+    <br>
+    <input type="submit" value="Confirmar"
+    
+    </form>
+
+</body>
+
+</html>
