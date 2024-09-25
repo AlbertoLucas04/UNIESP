@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    body {
+        background-color: white ;
+        color: black ;
+        text-align: left;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;        
+        font-size: medium;
+    }
+
+    h3 {
+        text-align: ;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    img {
+        float:right
+    }
+
+    ol {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    
+    ul {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    form{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    table, th, td{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: 1px solid;;
+        text-align: center;
+        height: 70px;
+        width: 500px;
+    }
+
+    dl{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    footer{
+        text-align: center;
+    }
+
+    
+</style>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision Page</title>
+</head>
+
+<body>
+    <title>Página de Revisão</title>
+    <h1>Olá, seja bem-vindo à Página de Revisão!</h1>
+    <div class="photo"></div>
+        <img src="capa.jpg" width="360" height="239,5">
+    </div>
+    <h1>
+        <hr>
+    </h1>
+    
+    <p>Com o intuito de revisar os conteúdos passados, estou aqui para aplicá-los em uma página criada do zero.</p>
+    <p><b>Vamos para os conteúdos passados!</b></p>
+
+    <h3>01ª Parte: Parágrafos comuns</h3>
+    <p>Os parágrafos são como textos simples, mas que podem ser alterados de diversas formas, com as mais variadas
+        palavras ou coisas do tipo! </p>
+
+    <h3>02ª Parte: Listas - das mais variadas</h3>
+    <p>As listas podem ser de alguns tipos, sendo:</p>
+    <ol type="1">
+
+        <li>Númericas</li>
+        <li>Onde a listagem é por números índio-arábicos</li>
+    </ol>
+    <ol type="A">
+        <li>Alfabéticas Maiúsculas</li>
+        <li>Onde a listagem é por Letras Maiúsculas</li>
+
+    </ol>
+
+    <ol type="a">
+        <li>Alfabéticas Minúsculas</li>
+        <li>Onde a listagem é realizada por Letras Minúsculas</li>
+
+    </ol>
+
+    <ol type="I">
+        <li>Númerico-Romana</li>
+        <li>Onde a listagem é realizada por números romanos</li>
+    </ol>
+
+    <ol type="i">
+        <li>Listagem por 'i'</li>
+        <li>Onde a listagem é realizada por letras 'i', 'numericamente organizadas'</li>
+
+    </ol>
+
+    <ul>
+        <li>Listas sem "ordem" - tag 'ul'</li>
+        <li>Onde as listas são organizadas por simples bolinhas</li>
+    </ul>
+    <dl>
+        <dl>Descritivas</dl>
+        <dd>- Onde se descreve cada termo que for inserido</dd>
+    </dl>
+
+    <h3>03ª Parte: Tabelas</h3>
+    <p>As tabelas podem e são itens imprescindíveis para determinadas maneiras de organizar!</p>
+    <table>
+        <tr>
+            <th>Aqui ficam os <br>títulos das colunas</th>
+            <th>Coluna 01</th>
+            <th>Coluna 02</th>
+        </tr>
+
+        <tr>
+            <td>Aqui, ficam os<br>conteúdos das<br>tabelas</td>
+            <td>Conteúdo 01</td>
+            <td>Conteúdo 02</td>
+        </tr>
+    </table>
+
+    <h3>04ª Parte: Formulários</h3>
+    <p>Os formulários são utilizados quando queremos recolher informações 'inputadas' pelos usuários finais.</p>
+
+    <form>
+        <h4><label for="Textos">Textos:</label></h4>
+        <input type="text" name="Textos" required>
+
+        <h4><label for="NúmerosDiversos">Números Comuns:</label></h4>
+        <input type="number" number="númeroQualquer" placeholder="Número" required>
+
+        <h4><label for="Datas">Datas:</label></h4>
+        <input type="date" date="Datas" placeholder="Data" required>
+
+        <h4><label for="Links">Link:</label></h4>
+        <input type="url" url="Links" placeholder="Url, que possui um verificador">
+
+        <h4><label for="email">Email:</label></h4>
+        <input type="email" email="email" placeholder="Email, que também possui verificador">
+        
+        <h4><label for="checkbox">Caixas de Seleção</label></h4>
+        <input type="checkbox" id="op1" name="Opção 02"> <br> <br> <input type="checkbox" id="op2" name="Opção 02">
+
+
+    </form>
+
+    <footer>
+        <h3>E esses, por enquanto, foram os nossos aprendizados!</h3>
+    </footer>
+
+</body>
+
+</html>
