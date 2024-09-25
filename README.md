@@ -1,4 +1,4 @@
-Repositório da Faculdade.
+REPOSITÓRIO DA FACULDADE
 
 Acompanhe as minhas evoluções à medida que o número de aulas aumenta!
 
