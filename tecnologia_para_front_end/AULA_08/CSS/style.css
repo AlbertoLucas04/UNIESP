@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: "Danfo";
+    src: url(../FONTS//DANFO/Danfo-Regular-VariableFont_ELSH.ttf);
+}
+
+@font-face {
+    font-family: "Homenaje";
+    src: url(../FONTS/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    text-align: center;
+}
+
+section {
+    background-color: #727971;
+    margin-top: 150px;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 16px;
+}
+
+button {
+    border-radius: 6px;
+    width: 100px;
+    height: 25px;
+
+}
+#card-img-1 {
+    height: 313px;
+    width: 313px;
+    border-radius:50%;
+}
+
+.card-nome {
+    font-family: 'Danfo';
+}
+
+.card-description {
+    font-family: 'Homenaje';
+}
