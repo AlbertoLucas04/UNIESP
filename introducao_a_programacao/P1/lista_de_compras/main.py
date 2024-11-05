@@ -1,5 +1,28 @@
 shop_list = []
 
+# CASE 01
+def add_item(shop_list:list) -> list:
+    new_item = input('Insira o novo item: ')
+    shop_list = shop_list + new_item
+    return shop_list
+
+
+# CASE 02
+
+def remove_item(shop_list:list) -> list:
+    remove_item = int(input('Digite o código do item: ')) -1
+    del shop_list[remove_item]
+    
+    return shop_list
+    
+# CASE 03
+
+def show_list(shop_list:list) -> list:
+    
+    for i in range(len(shop_list)):
+        print(f'{i+1} - {shop_list[i]}')
+
+    
 while True:
     print('\n =======================')
     print('1 - Adicionar novo item')
@@ -22,8 +45,8 @@ while True:
         # Remove item
         case 2:
             print('\n====> REMOVER ITEM <====\n')        
-            for i in range(len(shop_list)):
-                print(f'{i+1} - {shop_list[i]}')
+            
+            show_list(shop_list=shop_list)
             
             print("\n===")
             
@@ -32,10 +55,9 @@ while True:
             
             rem_item = input('Digite o código do item: ')
             
-            
         # Exibir lista
         case 3:
             print('\n====> LISTA COMPLETA <====\n')
             
-            for i in range(len(shop_list)):
-                print(f'{i+1} - {shop_list[i]}')
+            show_list(shop_list=shop_list)
+           
