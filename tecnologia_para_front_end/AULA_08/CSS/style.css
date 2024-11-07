@@ -45,3 +45,9 @@ button {
 .card-description {
     font-family: 'Homenaje';
 }
+
+.card_seguir_btn {
+    padding: 10px 20px ;
+    cursor: pointer;   
+
+}
