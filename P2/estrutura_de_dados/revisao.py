@@ -67,7 +67,12 @@ print(f'\n{put_num2}! = {fat}')
 
 ''' 7. Crie um programa que imprima a sequência de Fibonacci até um valor inserido pelo usuário. '''
 
+print('\n=== SEQUENCIA DE FIBONACCI ===\n')
 
+put_num = int(input('Insira um número e descubra como é a sequência de Fibonacci até esse número: '))
+
+for f in range(0, put_num + 1):
+    put_num += f
     
 
 
