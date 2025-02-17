@@ -24,9 +24,50 @@ else:
 ''' 3. Escreva um programa que solicite um número ao usuário e imprima todos os números pares de 0 até
 esse número.'''
 
-put_num1 = int(input('Insira um número: '))
+put_num = int(input('Insira um número: '))
 
-for i in put_num1:
+for p in range(0, put_num + 1):
+  if p % 2 == 0:
+    print(p)
+
+''' 4. Crie um programa que leia uma lista de números e exiba o maior e o menor valor da lista. '''
+
+num_list = [27, 5, 83, 14, 62, 39, 71, 8, 56, 90]
+
+print(f'A lista é {num_list}')
+
+max_num = max(num_list)
+min_num = min(num_list)
+
+print(f'\nO maior número é {max_num}')
+print(f'O menor número é {min_num}')
+
+''' 5. Faça um programa que leia uma lista de números e retorne a média dos números pares. '''
+
+num_list = [3, 7, 15, 22, 8, 11, 29, 4, 18, 9]
+
+par_list = []
+
+for num in num_list:
+    if num % 2 == 0:
+        par_list.append(num)
+
+media_par_list = sum(par_list) / len(par_list)
+
+print(f'A média dos números pares dessa lista é {media_par_list}')
+    
+''' 6. Escreva um programa que peça um número inteiro positivo ao usuário e calcule o fatorial desse
+número. '''
+from math import factorial
+
+put_num = int(input('Insira um número: '))
+fat = factorial(put_num2)
+
+print(f'\n{put_num2}! = {fat}')
+
+''' 7. Crie um programa que imprima a sequência de Fibonacci até um valor inserido pelo usuário. '''
+
+
     
 
 
