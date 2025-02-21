@@ -7,8 +7,14 @@ Matérias abordadas em cada período,
 - P1:
   - Introdução a Programação
     - Primeiros passos no Python 
-  - Tópicos Essenciais para Programação
-    - Organização e Gerenciamento
+  - Tecnologia para Front-End
+    - Primeiros passos no HTML e no CSS
+   
+- P2:
+  - Linguagem de progamação
+    - Primeiros passos no Java
+  - Estrutura de dados
+    - Aprofundamento em Python, voltado para a manipulação de dados     
 
 
 
