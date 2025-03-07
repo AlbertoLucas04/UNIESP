@@ -44,7 +44,7 @@ match put_option:
         print('Dados (Grupo Feminino)')
         print(f'Maior altura: {max_fem} m')
         print(f'Menor altura: {min_fem} m')
-        print(f'Quantidade de pessoas: {qtd_fem}')
+        print(f'Quantidade de pessoas: {qtd_fem}\n')
 
     case _:
         print("Insira um código válido.")
