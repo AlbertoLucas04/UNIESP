@@ -1,8 +1,9 @@
 public class Product_Control {
 
     private String nome, tamanho, cor;
-    private int codigo, quantidade, qtd_parcelas;
-    private double peso, valor_produto, valor_pago;
+    private int codigo, quantidade, qtd_cliente;
+    private double peso, valorProduto;
+
 
 
     public String getNome() {
@@ -53,34 +54,37 @@ public class Product_Control {
         this.peso = peso;
     }
 
-    public double getValor() {
-        return valor_produto;
+    public double getvalorProduto() {
+        return valorProduto;
     }
 
-    public void setValor(double valor) {
-        this.valor_produto = valor;
+    public void setvalorProduto(double valor_produto) {
+        this.valorProduto = valor_produto;
     }
 
-    public double getValor_pago() {
-        return valor_pago;
+    // Métodos
+
+
+
+    public double valorFinal(double valorProduto, int qtd_cliente) {
+        return (this.getvalorProduto() * qtd_cliente);
     }
 
-    public void setValor_pago(double valor_pago) {
-        this.valor_pago = valor_pago;
-    }
-
-    public double pagtoComDesconto(double valor_produto) {
-        return (this.valor_produto - (this.valor_produto*0.05));
-    }
-
-    public double troco(double valor_produto, double valor_pago){
-        return (this.valor_pago - this.valor_produto);
+    public double troco(double valor_pago, double valor_produto){
+        return (valor_pago - pagtoComDesconto(valorFinal(getvalorProduto(), qtd_cliente), qtd_cliente));
     }
 
     public double pagtoParcelado(double valor_produto, int qtd_parcelas){
         return (valor_produto/qtd_parcelas);
     }
 
+    public int controleDeEstoque(int qtd_cliente){
+        return (this.getQuantidade() - qtd_cliente);
+    }
+
+    public double pagtoComDesconto(double valor_produto, int qtd_cliente) {
+        return (valorFinal(this.getvalorProduto(), qtd_cliente) - (valorFinal(this.getvalorProduto(), qtd_cliente)*0.05));
+    }
 
 
 }
