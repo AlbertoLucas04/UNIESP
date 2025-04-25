@@ -1,17 +1,29 @@
 package pessoa1;
 
-public class Pessoa {
+public abstract class Pessoa {
 
-    String nome;
+    protected String nome;
 
-    int idade;
+    protected int idade;
 
-    double altura;
+    protected double altura;
 
-    public void aniversario(){
-        idade++;
+    public void aniversario( ){
+
+        idade ++;
+
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", altura=" + altura +
+                '}';
+    }
+
+    public abstract void quemSouEu();
+    public abstract void minhaAtividade();
 
 }
-

@@ -9,23 +9,25 @@ public class Main {
       Locale.setDefault(Locale.US);
 
       Scanner input = new Scanner(System.in);
-      Pessoa pessoa = new Pessoa();
+      Professor prof = new Professor();
 
         System.out.print("Digite seu nome: ");
-        pessoa.nome = input.nextLine();
+        prof.nome = input.nextLine();
 
         System.out.print("Digite sua idade: ");
-        pessoa.idade = input.nextInt();
+        prof.idade = input.nextInt();
 
         System.out.print("Digite sua altura: ");
-        pessoa.altura = input.nextDouble();
+        prof.altura = input.nextDouble();
 
-        System.out.println();
-        System.out.println("=== Dados Recolhidos ===");
-        System.out.println();
-        System.out.println("Nome: " + pessoa.nome);
-        System.out.println("Idade: " + pessoa.idade);
-        System.out.println("Altura: " + pessoa.altura);
+        System.out.print("Digite a especialização: ");
+        prof.setEspecialidade(input.next());
+
+        System.out.println(Categoria.Professor);
+
+        System.out.println("\n=== Dados Recolhidos ===\n");
+        System.out.println(prof);
+
 
 
     }
